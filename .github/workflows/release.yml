@@ -39,7 +39,7 @@ jobs:
       - run: npm ci
       - name: Create or update Release PR
         id: changesets
-        uses: changesets/action@v1
+        uses: changesets/action@v2
         with:
           version: npm run version
           commit: 'chore: release package'
