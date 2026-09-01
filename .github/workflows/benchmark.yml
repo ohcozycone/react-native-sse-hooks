@@ -36,7 +36,7 @@ jobs:
             echo "The job fails on execution or delivered-data correctness failures, not on small timing deltas."
           } >> "$GITHUB_STEP_SUMMARY"
       - name: Upload benchmark report
-        uses: actions/upload-artifact@v6
+        uses: actions/upload-artifact@v7
         with:
           name: node-v8-benchmark-${{ github.run_id }}
           path: benchmark-results/node-v8.json
